@@ -5,7 +5,7 @@
 int main()
 {
     std::cout << "Hello, World!" << std::endl;
-    EngineBravo::Engine engine;
-    engine.run();
+    EngineBravo::getInstance().initialize();
+    EngineBravo::getInstance().run();
     return 0;
 }
