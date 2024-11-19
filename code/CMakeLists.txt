@@ -13,7 +13,7 @@ file(GLOB_RECURSE SOURCES ${SOURCE_DIR}/*.cpp ${SOURCE_DIR}/*.h)
 add_executable(GameProject ${SOURCES})
 
 # Include directories
-include_directories(${SOURCE_DIR} external/Engine-Bravo/include)
+include_directories(${SOURCE_DIR} ${CMAKE_SOURCE_DIR}/inc)
 
 # Link the Engine-Bravo library
-target_link_libraries(GameProject EngineBravo)
+target_link_libraries(GameProject PUBLIC EngineBravo)
